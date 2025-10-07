@@ -9,6 +9,7 @@ A comprehensive tool for analyzing the feasibility of web scraping projects. Thi
 - **Multi-format Reports**: Generates analysis reports in Markdown, HTML, PDF, and DOCX formats
 - **Executive Summaries**: Provides concise summaries for stakeholders
 - **Site Mapping**: Creates detailed sitemaps for target websites
+- **Playwright Integration**: Uses Playwright MCP for browser automation and dynamic content analysis
 - **Flexible Output**: Supports multiple output formats for different use cases
 
 ## Project Structure
@@ -16,31 +17,20 @@ A comprehensive tool for analyzing the feasibility of web scraping projects. Thi
 ```
 web-scraping-feasibility-analyzer/
 ├── analysis-report/          # Generated analysis reports
-│   ├── acehardware.com/     # Ace Hardware analysis
-│   ├── bestbuy.com/         # Best Buy analysis
-│   └── temu.com/            # Temu analysis
+├── .playwright-mcp/         # Playwright MCP configuration
 ├── shared_docx_converter.py  # Markdown to DOCX conversion utility
 └── README.md                # This file
 ```
 
-## Analysis Reports
+## Playwright MCP Integration
 
-The tool has analyzed several major e-commerce websites:
+This tool integrates with Playwright MCP (Model Context Protocol) for advanced browser automation and dynamic content analysis:
 
-### 🔨 Ace Hardware (acehardware.com)
-- **Status**: Moderate feasibility
-- **Key Challenges**: Rate limiting, anti-bot measures
-- **Report Files**: PDF, Markdown, HTML formats available
-
-### 🛍️ Best Buy (bestbuy.com)
-- **Status**: Complex scraping requirements
-- **Key Challenges**: Dynamic content loading, advanced anti-bot systems
-- **Report Files**: Full technical analysis with DOCX conversions
-
-### 🛒 Temu (temu.com)
-- **Status**: High complexity
-- **Key Challenges**: Heavy JavaScript, sophisticated protection mechanisms
-- **Report Files**: Comprehensive analysis in multiple formats
+- **Browser Automation**: Automated testing of JavaScript-heavy websites
+- **Dynamic Content Analysis**: Evaluates content that requires browser rendering
+- **Anti-bot Detection**: Tests various protection mechanisms in real browser environments
+- **Performance Monitoring**: Measures page load times and resource usage
+- **Screenshot Capture**: Visual documentation of website behavior
 
 ## Installation
 
@@ -52,12 +42,18 @@ python --version
 
 # Install required dependencies
 pip install python-docx pypandoc
+
+# Install Playwright for browser automation
+pip install playwright
+playwright install
 ```
 
-### Optional Dependencies
+### Dependencies
 
 - **python-docx**: For native DOCX conversion (recommended)
 - **pypandoc**: Fallback DOCX conversion method
+- **playwright**: Browser automation for dynamic content analysis
+- **playwright-mcp**: Model Context Protocol integration for Playwright
 
 ## Usage
 
@@ -71,17 +67,17 @@ python shared_docx_converter.py report.md
 python shared_docx_converter.py report.md /path/to/output/
 
 # Convert all markdown files in a directory
-python shared_docx_converter.py --dir analysis-report/bestbuy.com/
+python shared_docx_converter.py --dir analysis-report/
 ```
 
-### Viewing Analysis Reports
+### Browser Automation Analysis
 
-Navigate to the `analysis-report/` directory to access detailed feasibility analyses for different websites. Each website analysis includes:
+The tool uses Playwright MCP for comprehensive website analysis:
 
-- **Executive Summary**: High-level overview and recommendations
-- **Technical Analysis**: Detailed technical assessment
-- **Sitemap**: Website structure analysis
-- **Multiple Formats**: HTML, PDF, DOCX versions available
+- **Dynamic Testing**: Automated browser testing of target websites
+- **JavaScript Evaluation**: Analysis of client-side rendering requirements
+- **Protection Testing**: Detection of anti-bot and security measures
+- **Performance Metrics**: Page load times and resource utilization
 
 ## Report Contents
 
