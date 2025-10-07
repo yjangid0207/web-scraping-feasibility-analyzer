@@ -1,0 +1,69 @@
+# Temu.com Site Structure Analysis
+# Note: All URLs require browser automation due to JavaScript challenges blocking HTTP access
+
+## Main Site Structure
+https://www.temu.com/ - Homepage (requires CAPTCHA solving)
+https://www.temu.com/robots.txt - Serves JavaScript challenge instead of robots.txt
+https://www.temu.com/sitemap.xml - Serves JavaScript challenge instead of sitemap
+
+## Category URLs (identified from browser automation)
+https://www.temu.com/channel/best-sellers.html - Best selling items
+https://www.temu.com/channel/full-star.html - 5-star rated products
+https://www.temu.com/channel/lightning-deals.html - Time-limited offers
+
+## Product URL Patterns (observed during analysis)
+# Note: All product URLs are dynamically generated and change frequently
+# Product IDs appear to use alphanumeric format: [a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}
+
+## Sample Product URLs (identified during browser automation)
+# These are examples from the lightning deals section:
+- Smart Watch: /product/new-mens-and-womens-multifunctional-smartwatch-*
+- Jump Starter: /product/6000a-jump-starter-with-air-compressor-*
+- Running Shoes: /product/ownin-womens-lightweight-road-running-shoes-*
+- Electric Bike: /product/m1-electric-bike-for-adults-*
+
+## API Endpoints (requires browser automation with valid session)
+https://www.temu.com/api/alexa/homepage/goods_list - Product listings API
+https://www.temu.com/api/poppy/v2/search_activation - Search functionality
+https://www.temu.com/api/bg/bg-uranus-api/uranus_cart/cart_modify - Cart operations
+https://www.temu.com/api/static/config/get_front_end_page_config - Site configuration
+https://www.temu.com/api/phantom/obtain_captcha - CAPTCHA challenge system
+
+## Search URLs
+https://www.temu.com/search_result.html?search_key={query} - Search results page
+
+## User Account URLs
+https://www.temu.com/bgn_verification.html - Security verification (CAPTCHA page)
+https://www.temu.com/orders.html - Order history
+https://www.temu.com/cart.html - Shopping cart
+
+## Static Pages
+https://www.temu.com/about-temu.html - About page
+https://www.temu.com/contact-us.html - Contact information
+https://www.temu.com/terms-of-use.html - Terms of service
+https://www.temu.com/privacy-and-cookie-policy.html - Privacy policy
+
+## Mobile App Links
+https://apps.apple.com/us/app/id1641486558 - iOS App Store
+https://play.google.com/store/apps/details?id=com.einnovation.temu - Google Play Store
+
+## CDN and Asset URLs
+https://static.kwcdn.com/ - Static assets and JavaScript files
+https://img.kwcdn.com/ - Product images
+https://aimg.kwcdn.com/ - Additional images and assets
+https://commimg.kwcdn.com/ - Common/shared images
+
+## Important Notes:
+1. ALL URLs return JavaScript challenges when accessed via HTTP requests
+2. Product URLs are dynamically generated and frequently change
+3. API endpoints require valid browser sessions with CAPTCHA completion
+4. Category and search pages use infinite scroll/lazy loading
+5. Image URLs use dynamic parameters for size/quality optimization
+6. Session tokens and verification codes change on every visit
+
+## Scraping Implications:
+- No static sitemap available due to JavaScript challenges
+- Product discovery requires browser automation through category browsing
+- URLs are not predictable and must be discovered dynamically
+- All data extraction must be performed in browser automation context
+- High infrastructure requirements due to anti-bot protection system

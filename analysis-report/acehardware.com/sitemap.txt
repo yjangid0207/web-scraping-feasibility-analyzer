@@ -1,0 +1,39 @@
+# AceHardware.com Product URL Patterns and Site Structure
+# Generated: 2025-10-06
+# Base Domain: https://www.acehardware.com
+
+## URL Patterns Identified:
+
+### Product Pages:
+# Pattern 1: /p/{SKU}
+https://www.acehardware.com/p/7006611
+https://www.acehardware.com/p/7037991
+https://www.acehardware.com/p/7029528
+https://www.acehardware.com/p/7007779
+
+# Pattern 2: Full category path + SKU
+https://www.acehardware.com/departments/lawn-and-garden/outdoor-power-equipment/leaf-blowers/7006611
+https://www.acehardware.com/departments/tools/power-tools/cordless-drills/7037991
+
+### Category Pages:
+https://www.acehardware.com/departments/tools/power-tools
+https://www.acehardware.com/departments/lawn-and-garden
+https://www.acehardware.com/departments/outdoor-living/grills-and-smokers
+
+### Key Findings:
+- Product SKUs range from ~1 to 356,001+ based on sitemap analysis
+- Products are distributed across ~150+ product batch sitemaps
+- 2,000 products per batch sitemap
+- URL structure follows consistent department hierarchy
+
+### Robots.txt Analysis:
+- Crawl-delay: 5 seconds
+- Disallows: /cart, /user, search pages, faceted navigation
+- Sitemap provided: https://www.acehardware.com/sitemap.xml
+
+### Sample Product URLs for Testing:
+https://www.acehardware.com/p/1000165
+https://www.acehardware.com/p/1000918
+https://www.acehardware.com/p/1000199
+https://www.acehardware.com/p/1000330
+https://www.acehardware.com/p/1000892

@@ -1,0 +1,96 @@
+# BestBuy.com Site Structure Analysis
+# Analysis Date: October 6, 2025
+# Note: HTTP access to robots.txt and sitemap.xml was blocked by anti-bot protection
+
+## Product URL Patterns (Observed via Browser Automation)
+
+### Main Product Pages
+# Pattern: /product/{product-name}/{sku}/
+https://www.bestbuy.com/product/apple-macbook-air-13-inch-laptop-apple-m4-chip-built-for-apple-intelligence-16gb-memory-256gb-ssd-midnight/JJGCQ8RH7G
+https://www.bestbuy.com/product/lenovo-ideapad-slim-3-chromebook-14-full-hd-laptop-mediatek-kompanio-520-4gb-memory-64gb-emmc-abyss-blue/JJGSH8G34Z
+https://www.bestbuy.com/product/pokemon-trading-card-game-hydreigon-ex-dragapult-ex-premium-collection/JJG2TLXGF9
+
+### Category Pages
+# Pattern: /site/{category}/{subcategory}/
+https://www.bestbuy.com/site/electronics/computers-pcs/abcat0500000.c?id=abcat0500000
+https://www.bestbuy.com/site/computers-pcs/laptop-computers/abcat0502000.c?id=abcat0502000
+https://www.bestbuy.com/site/all-laptops/macbooks/pcmcat247400050001.c?id=pcmcat247400050001
+
+### Search Pages
+# Pattern: /site/searchpage.jsp?st={query}
+https://www.bestbuy.com/site/searchpage.jsp?st=laptop
+https://www.bestbuy.com/site/searchpage.jsp?st=macbook
+https://www.bestbuy.com/site/searchpage.jsp?st=gaming+laptop
+
+### Deal/Promotional Pages
+# Pattern: /site/promo/{promo-name} or /site/misc/{category}/
+https://www.bestbuy.com/site/promo/laptop-and-computer-deals
+https://www.bestbuy.com/site/promo/tv-deals
+https://www.bestbuy.com/site/misc/deal-of-the-day/pcmcat248000050016.c?id=pcmcat248000050016
+https://www.bestbuy.com/top-deals
+
+### Brand/Manufacturer Pages
+# Pattern: /site/all-electronics-on-sale/{brand}-on-sale/
+https://www.bestbuy.com/site/all-electronics-on-sale/all-apple-on-sale/pcmcat1688758488330.c?id=pcmcat1688758488330
+
+## SKU Patterns Observed
+# BestBuy SKUs appear to follow these patterns:
+- JJGCQ8RH7G (MacBook Air)
+- JJGSH8G34Z (Lenovo Chromebook) 
+- JJG2TLXGF9 (Pokemon cards)
+- Format appears to be: [A-Z0-9]{10}
+
+## Category Hierarchy Structure
+Electronics (abcat0500000)
+├── Computers & Tablets (abcat0500000)
+│   ├── Laptops (abcat0502000)
+│   │   └── MacBooks (pcmcat247400050001)
+├── TVs & Projectors
+├── Video Games & VR
+├── Audio & Headphones
+├── Cameras & Drones
+└── Smart Home & Security
+
+## International Handling
+# Geo-location detection active
+https://www.bestbuy.com/ (redirects to country selection)
+https://www.bestbuy.com/?intl=nosplash (direct US site access)
+
+## Anti-Bot Protection Endpoints
+# These endpoints indicate Akamai protection
+https://www.bestbuy.com/akam/13/5cddeaef (Bot detection script)
+
+## API Endpoints (Likely Protected)
+# GraphQL endpoints observed in browser network traffic
+# Note: These require browser automation to access due to anti-bot protection
+/api/graphql (Product data)
+/api/fulfillment (Inventory/shipping)
+/api/pricing (Price information)
+
+## Store Locator
+# Pattern: Store selection affects product availability
+/store/pickup (Store selection interface)
+# Store IDs observed: 146 (Sterling)
+
+## Key Observations for Scraping:
+1. Product data is server-side rendered (immediately available in HTML)
+2. SKU format is consistent 10-character alphanumeric
+3. Category structure follows hierarchical pattern with IDs
+4. Search functionality uses JSP with query parameters
+5. All endpoints protected by advanced anti-bot system
+6. Geographic location affects product availability and pricing
+7. HTTP access completely blocked - browser automation required
+
+## Estimated Site Scale:
+- Approximate product catalog: 100,000+ SKUs
+- Categories: 50+ main categories with subcategories
+- Store locations: 1,000+ stores affecting inventory
+- Daily traffic: Estimated 50-100 million page views
+
+## Data Quality Assessment:
+- Product information: Comprehensive and up-to-date
+- Pricing: Real-time with promotional pricing
+- Inventory: Store-specific availability
+- Reviews: Customer ratings and detailed reviews
+- Images: High-quality product galleries
+- Specifications: Detailed technical specs for electronics
