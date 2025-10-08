@@ -118,7 +118,7 @@ Each analysis includes:
 This is a defensive security tool designed for legitimate web scraping feasibility analysis. Contributions should focus on:
 
 - Improving analysis accuracy
-- Adding new report formats
+- Testing with proxies 
 - Enhancing security assessments
 - Documentation improvements
 
