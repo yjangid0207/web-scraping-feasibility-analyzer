@@ -1,0 +1,48 @@
+DICK'S Sporting Goods - Product URL Patterns and Site Structure
+
+=== SITEMAP ANALYSIS ===
+Main Sitemap: https://www.dickssportinggoods.com/seo_sitemap.xml
+Total Product Sitemaps: 7 files
+Total Estimated Products: ~179,651
+
+Product Sitemap Files:
+- https://www.dickssportinggoods.com/seo_sitemap_products_1.xml (25,001 URLs)
+- https://www.dickssportinggoods.com/seo_sitemap_products_2.xml (25,001 URLs)
+- https://www.dickssportinggoods.com/seo_sitemap_products_3.xml (25,001 URLs)
+- https://www.dickssportinggoods.com/seo_sitemap_products_4.xml (25,001 URLs)
+- https://www.dickssportinggoods.com/seo_sitemap_products_5.xml (25,001 URLs)
+- https://www.dickssportinggoods.com/seo_sitemap_products_6.xml (25,001 URLs)
+- https://www.dickssportinggoods.com/seo_sitemap_products_7.xml (4,645 URLs)
+
+=== PRODUCT URL PATTERN ===
+Pattern: https://www.dickssportinggoods.com/p/{product-name-slug}/{product-id}
+
+Sample Product URLs:
+https://www.dickssportinggoods.com/p/champion-youth-cincinnati-bearcats-red-t-shirt-23chaynccncyrdyprcin/23chaynccncyrdyprcin
+https://www.dickssportinggoods.com/p/eagles-wings-florida-state-seminoles-nostalgia-necktie-21ewiuncfsnstlgncflo/21ewiuncfsnstlgncflo
+https://www.dickssportinggoods.com/p/nike-mens-alphafly-3-premium-running-shoes-25nikmrunnlphfly3rfec/25nikmrunnlphfly3rfec
+https://www.dickssportinggoods.com/p/osprey-daylite-sling-pack-21tryudyltslngxxxctp/21tryudyltslngxxxctp
+https://www.dickssportinggoods.com/p/columbia-mens-thrive-revive-slide-sandals-23cmbmmthrvrvvblkfot/23cmbmmthrvrvvblkfot
+https://www.dickssportinggoods.com/p/hydro-flask-8l-lunch-tote-19hflulnchtt8lxxxodr/19hflulnchtt8lxxxodr
+https://www.dickssportinggoods.com/p/picnic-time-indiana-hoosiers-reclining-camp-chair-22uuvuncndnrclncmind/22uuvuncndnrclncmind
+https://www.dickssportinggoods.com/p/f-jneil-10-compartment-deluxe-tackle-bag-16fneufjnlsrfbgslfac/16fneufjnlsrfbgslfac
+https://www.dickssportinggoods.com/p/sog-specialty-knives-aegis-at-forest-and-moss-knife-20sogugstfrstmssxcut/20sogugstfrstmssxcut
+https://www.dickssportinggoods.com/p/nike-adult-tottenham-hotspur-club-white-t-shirt-24nikmclbthfsstwhtol/24nikmclbthfsstwhtol
+
+=== CATEGORY URL PATTERNS ===
+Sale/Clearance: https://www.dickssportinggoods.com/f/sale
+Brand Pages: https://www.dickssportinggoods.com/f/{brand-name}
+Category Pages: https://www.dickssportinggoods.com/c/{category-name}
+Filter Pages: https://www.dickssportinggoods.com/f/{filter-criteria}
+
+=== OTHER IMPORTANT URLS ===
+Static Content: https://www.dickssportinggoods.com/static_seo_sitemap_dsg.xml
+Hypercat Sitemap: https://www.dickssportinggoods.com/seo_sitemap_hypercat.xml
+Main Pages: https://www.dickssportinggoods.com/seo_sitemap_main.xml
+Pro Tips: https://www.dickssportinggoods.com/content/dsg/us/en.sitemap.protips-sitemap.xml
+
+=== ROBOTS.TXT SUMMARY ===
+- Accessible to crawlers
+- Disallows dynamic pages, user accounts, cart, checkout
+- Allows product pages and category pages
+- Sitemap properly declared
