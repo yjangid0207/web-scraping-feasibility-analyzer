@@ -48,6 +48,21 @@ pip install playwright
 playwright install
 ```
 
+### Playwright MCP Setup
+
+To enable advanced browser automation features with Claude Code, install the Playwright MCP integration:
+
+```bash
+# Add Playwright MCP to Claude Code
+claude mcp add playwright npx @playwright/mcp@latest
+```
+
+This integration provides enhanced capabilities for:
+- Real-time browser automation during analysis
+- Dynamic content testing and evaluation
+- Anti-bot detection mechanism testing
+- Live website interaction and data extraction validation
+
 ### Dependencies
 
 - **python-docx**: For native DOCX conversion (recommended)
@@ -107,14 +122,3 @@ This is a defensive security tool designed for legitimate web scraping feasibili
 - Enhancing security assessments
 - Documentation improvements
 
-## License
-
-This project is for educational and legitimate business use only. Please respect websites' robots.txt and terms of service.
-
-## Support
-
-For issues or feature requests, please create an issue in the project repository.
-
----
-
-**⚠️ Disclaimer**: This tool is intended for legitimate web scraping feasibility analysis only. Always respect websites' terms of service, robots.txt files, and applicable laws when conducting web scraping activities.
