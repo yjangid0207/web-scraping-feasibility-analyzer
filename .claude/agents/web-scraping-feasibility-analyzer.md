@@ -70,22 +70,21 @@ Base proxy recommendations on actual HTTP testing results with real browser head
 
 **DELIVERABLES:**
 Create ALL files in the 'analysis-report/{domain_name}/' folder (create the domain folder if it doesn't exist). Required deliverables:
-1. **technical-analysis.pdf** - Complete comprehensive analysis report in PDF format
-2. **technical-analysis.md** - Same content in Markdown format  
-3. **technical-analysis.html** - Same content in HTML format for web viewing
-4. **technical-analysis.docx** - Same content in Microsoft Word format
-5. **executive-summary.md** - Business-focused summary with key recommendations
-6. **executive-summary.docx** - Executive summary in Microsoft Word format
-7. **sitemap.txt** - Sample product URLs and site structure mapping (if applicable)
-8. **product-count-analysis.md** - Detailed analysis of estimated product count based on sitemap analysis (if product URLs found)
-9. **product-count-analysis.docx** - Product count analysis in Microsoft Word format
+1. **technical-analysis.md** - Same content in Markdown format  
+2. **technical-analysis.html** - Same content in HTML format for web viewing
+3. **technical-analysis.docx** - Same content in Microsoft Word format
+4. **executive-summary.md** - Business-focused summary with key recommendations
+5. **executive-summary.docx** - Executive summary in Microsoft Word format
+6. **sitemap.txt** - Sample product URLs and site structure mapping (if applicable)
+7. **product-count-analysis.md** - Detailed analysis of estimated product count based on sitemap analysis (if product URLs found)
+8. **product-count-analysis.docx** - Product count analysis in Microsoft Word format
 
 **DOCX CONVERSION REQUIREMENT:**
 After creating all markdown (.md) files, automatically convert them to Microsoft Word (.docx) format using the shared DOCX conversion utility. Implementation steps:
 
-1. **Use Shared Converter**: Import and use the shared_docx_converter.py from the project root
-2. **Auto-Convert**: After generating each .md file, immediately create the corresponding .docx version using: `convert_md_to_docx(md_file_path, output_dir)`
-3. **Batch Conversion**: Alternatively, convert all MD files in the analysis directory at once using: `convert_all_md_files_in_directory(directory_path)`
+1. **Use Shared Converter**: Import and use the shared_docx_converter_v1.py from the project root
+2. **Auto-Convert**: After generating each .md file, immediately create the corresponding .docx version using: `md_to_docx(md_file_path, output_dir)`
+3. **Batch Conversion**: Process all MD files individually using the md_to_docx function
 4. **Error Handling**: The shared converter handles missing dependencies gracefully and provides clear error messages
 5. **File Naming**: Automatic naming with .docx extension (e.g., technical-analysis.md → technical-analysis.docx)
 

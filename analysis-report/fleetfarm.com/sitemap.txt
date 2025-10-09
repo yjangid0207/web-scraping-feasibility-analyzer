@@ -1,0 +1,86 @@
+# Fleet Farm - Sample URLs and Site Structure
+
+## Homepage
+https://www.fleetfarm.com/
+
+## Category Pages
+https://www.fleetfarm.com/category/hunting-shooting/_/N-1096313067
+https://www.fleetfarm.com/category/fishing/_/N-1191395697
+https://www.fleetfarm.com/category/sports-outdoors/_/N-817546303
+https://www.fleetfarm.com/category/tires-automotive/_/N-3033881547
+https://www.fleetfarm.com/category/clothing-footwear/_/N-3941125009
+https://www.fleetfarm.com/category/home-household/_/N-4001179884
+https://www.fleetfarm.com/category/food-health/_/N-563764611
+https://www.fleetfarm.com/category/pets-wild-bird/_/N-2832316490
+https://www.fleetfarm.com/category/lawn-garden/_/N-3059100830
+https://www.fleetfarm.com/category/farm-livestock/_/N-1885444951
+https://www.fleetfarm.com/category/home-improvement/_/N-3069115488
+https://www.fleetfarm.com/category/toys/_/N-3859731678
+
+## Subcategory Examples
+https://www.fleetfarm.com/category/hunting-shooting/firearms/_/N-3970765060
+https://www.fleetfarm.com/category/hunting-shooting/ammunition/_/N-931964591
+https://www.fleetfarm.com/category/hunting-shooting/ammunition/handgun-ammo/_/N-514716026
+https://www.fleetfarm.com/category/hunting-shooting/ammunition/handgun-ammo/target-handgun-ammo/_/N-1289176463
+https://www.fleetfarm.com/category/hunting-shooting/firearm-accessories/_/N-3801988029
+https://www.fleetfarm.com/category/hunting-shooting/optics/_/N-3357909885
+https://www.fleetfarm.com/category/hunting-shooting/archery/_/N-1643977679
+https://www.fleetfarm.com/category/hunting-shooting/blinds/_/N-660339760
+https://www.fleetfarm.com/category/hunting-shooting/game-cameras/_/N-2215930423
+
+## Sample Product Pages
+https://www.fleetfarm.com/detail/cci-9mm-luger-blazer-brass-124-grain-fmj-centerfire-handgun-cartridges-50-rounds/0000000395713?bc=10276
+https://www.fleetfarm.com/detail/liberty-safe-fleet-farm-exclusive-1955-granite-texture-w-e-lock-44-gun-safe/0000101801826?bc=10276
+https://www.fleetfarm.com/detail/muddy-14mp-two-pack-trail-cam-combo-w-batteries-and-sd-cards/0000101784692?bc=10276
+https://www.fleetfarm.com/detail/maverick-5-panel-dagger-dual-w-tinted-windows-blind/0000000385354?bc=10276
+https://www.fleetfarm.com/detail/high-desert-78-gun-fireproof-safe/0000101809738?bc=10276
+https://www.fleetfarm.com/detail/mr-heater-mh18b-big-buddy-portable-propane-heater/0000000330354?bc=10276
+
+## Brand Pages
+https://www.fleetfarm.com/brand/cci/_/N-4123795667
+https://www.fleetfarm.com/brand/winchester/_/N-3435189779
+https://www.fleetfarm.com/brand/remington/hunting/_/N-3936399246+1096313067
+https://www.fleetfarm.com/brand/federal/_/N-2289313842
+https://www.fleetfarm.com/brand/hornady/_/N-269528767
+https://www.fleetfarm.com/brand/dewalt/_/N-3600402375
+https://www.fleetfarm.com/brand/carhartt/_/N-586646654
+
+## Search Examples
+https://www.fleetfarm.com/search?Ntt=NT010DCDBE
+https://www.fleetfarm.com/search?Ntt=25411100089348
+
+## Service Pages
+https://www.fleetfarm.com/sitewide/storeLocator.jsp
+https://www.fleetfarm.com/sitewide/weeklyAd.jsp
+https://www.fleetfarm.com/c/services/gunsmithing
+https://www.fleetfarm.com/c/fleet-rewards
+https://www.fleetfarm.com/c/credit-card
+
+## URL Pattern Analysis
+
+### Category Structure
+- Format: `/category/{category-name}/_/N-{numeric-id}`
+- Hierarchical: Categories can have multiple levels
+- IDs appear to be system-generated unique identifiers
+
+### Product URLs
+- Format: `/detail/{product-slug}/{sku}?bc={category-id}`
+- SKU Format: 13-digit numeric (0000000395713)
+- bc Parameter: Links back to category ID
+
+### Search URLs
+- Format: `/search?Ntt={search-term}`
+- Ntt Parameter: Product codes or search terms
+- Additional filtering possible with N parameters
+
+### Brand Pages
+- Format: `/brand/{brand-name}/_/N-{brand-id}`
+- Some include category filters: `/brand/{brand}/hunting/_/N-{brand-id}+{category-id}`
+
+## Notes
+- No XML sitemap accessible (blocked by Cloudflare)
+- robots.txt also protected
+- All URLs require browser automation to access
+- Category IDs are consistent and can be used for systematic crawling
+- Product SKUs follow consistent 13-digit format
+- bc parameter helps with category association and breadcrumbs

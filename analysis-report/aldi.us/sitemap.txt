@@ -1,0 +1,69 @@
+# ALDI US Product URL Patterns and Site Structure Analysis
+
+## Base URLs
+- Homepage: https://www.aldi.us/
+- Products API: https://api.aldi.us/v2/products
+- Category Tree API: https://api.aldi.us/v2/product-category-tree
+
+## Product URL Structure
+- Individual Product: https://www.aldi.us/product/{slug}-{sku}
+  Example: https://www.aldi.us/product/pumpkin-0000000000003945
+- SKU Pattern: 13-digit zero-padded number (e.g., 0000000000003945)
+
+## Category Structure (23 Main Categories)
+- Fresh Produce (/products/fresh-produce/k/13)
+- Fresh Meat & Seafood (/products/fresh-meat-seafood/k/12)
+- Dairy & Eggs (/products/dairy-eggs/k/10)
+- Snacks (/products/snacks/k/20)
+- Frozen Foods (/products/frozen-foods/k/14)
+- Bakery & Bread (/products/bakery-bread/k/6)
+- Beverages (/products/beverages/k/7)
+- Pantry Essentials (/products/pantry-essentials/k/16)
+- Breakfast & Cereals (/products/breakfast-cereals/k/9)
+- Alcohol (/products/alcohol/k/1)
+- Household Essentials (/products/household-essentials/k/15)
+- Personal Care (/products/personal-care/k/17)
+- Pet Supplies (/products/pet-supplies/k/18)
+- Baby Items (/products/baby-items/k/5)
+- Deli (/products/deli/k/11)
+- Healthy Living (/products/healthy-living/k/208)
+- Featured (/products/featured/k/228)
+- ALDI Finds (/products/aldi-finds/k/2)
+- Seasonal Products (/products/featured/seasonal/k/238)
+- Weekly Specials (/weekly-specials)
+
+## Special Pages
+- Weekly Ads: https://www.aldi.us/weekly-specials/weekly-ads
+- ALDI Finds: https://www.aldi.us/weekly-specials/this-weeks-aldi-finds
+- Upcoming ALDI Finds: https://www.aldi.us/weekly-specials/upcoming-aldi-finds
+
+## API Endpoints Discovered
+1. Product Data: https://api.aldi.us/v2/products?servicePoint={store}&serviceType={pickup|delivery}&skus={comma_separated}&limit={num}
+2. Category Tree: https://api.aldi.us/v2/product-category-tree?serviceType={service}&servicePoint={store}
+3. CIAM Session: https://account.aldi.us/sfsites/c/resource/CIAM_SessionCheck
+
+## Sample Product URLs (10 examples from sitemap)
+1. https://www.aldi.us/product/clancy-s-original-kettle-chips-8-oz-0000000000000005
+2. https://www.aldi.us/product/benton-s-blueberry-breakfast-biscuits-8-8-oz-0000000000000006
+3. https://www.aldi.us/product/simply-nature-organic-unrefined-coconut-oil-14-fl-oz-0000000000000008
+4. https://www.aldi.us/product/friendly-farms-plain-whole-milk-greek-yogurt-32-oz-0000000000000009
+5. https://www.aldi.us/product/fremont-fish-market-wild-caught-salmon-16-oz-0000000000000010
+6. https://www.aldi.us/product/stonemill-parsley-flakes-0-25-oz-0000000000000011
+7. https://www.aldi.us/product/bremer-italian-meatballs-32-oz-0000000000000012
+8. https://www.aldi.us/product/stonemill-garlic-powder-0000000000000018
+9. https://www.aldi.us/product/friendly-farms-nonfat-plain-greek-yogurt-32-oz-0000000000000020
+10. https://www.aldi.us/product/simply-nature-organic-whole-wheat-spaghetti-1-lb-0000000000000024
+
+## Key Statistics
+- Total Product URLs in Sitemap: 3,618 products
+- URL Pattern: Consistent slug + SKU format
+- Last Modified: Products updated regularly (2025-10-06 to 2025-10-09)
+
+## Sitemaps Available
+- Main: https://www.aldi.us/sitemap.xml
+- Categories: https://www.aldi.us/sitemap_categories.xml
+- Products: https://www.aldi.us/sitemap_products.xml
+
+## Store/Service Parameters
+- servicePoint: Store code (e.g., "440-018" for Geneva location)
+- serviceType: "pickup" or "delivery"

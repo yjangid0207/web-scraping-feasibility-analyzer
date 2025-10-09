@@ -1,0 +1,14 @@
+# Costco Product URL Samples (from sitemap)
+https://www.costco.com/kutano-2-door-reach-in-refrigerator%2c-stainless-steel.product.100901238.html
+https://www.costco.com/kutano-reach-in-refrigerator-with-solid-door%2c-stainless-steel.product.4000050711.html
+https://www.costco.com/kutano-reach-in-freezer-with-solid-door%2c-stainless-steel.product.4000050712.html
+https://www.costco.com/kutano-merchandiser-refrigerator%2c-black.product.4000140441.html
+https://www.costco.com/kutano-2-door-reach-in-freezer%2c-stainless-steel.product.100901286.html
+
+# Category URL Samples
+https://www.costco.com/televisions.html
+https://www.costco.com/electronics.html
+https://www.costco.com/computers.html
+https://www.costco.com/appliances.html
+
+# Product Count Estimate: 7,827 products from main sitemap
